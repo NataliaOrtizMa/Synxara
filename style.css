@@ -57,7 +57,8 @@ p, li{
 aside {
     background-color: #fcfaa4de;
     position: sticky;
-    top: 0;
+    top: 0px;
+    bottom: 50px;
     float: left;
     width: 250px;
 }
@@ -200,6 +201,7 @@ ul.calculators a:hover {
 }
 
 footer {
+    position: relative;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -223,4 +225,37 @@ footer a:hover {
 
 footer i {
     font-size: 30px;
+}
+
+@media only screen  and (max-width: 320px) {
+    aside {
+        display: none;
+    }
+    main {
+        margin-left: 0;
+        /* margin-left: 250px; */
+        padding: 20px;
+        /* position: absolute; */
+    }
+    
+    .section {
+        margin-top: 40px;
+    }
+
+    ul {
+        padding-left: 0;
+    }
+
+    .text-description p {
+        margin-top: 0px;
+        text-align: center;
+    }
+
+    .marco-circular {
+        margin-top: 30px;
+    }
+
+    .temas {
+        margin: 0;
+    }
 }
