@@ -193,6 +193,7 @@ ul.calculators a:visited {
 }
 ul.calculators li:hover {
     background-color:#fbe464 ;
+    color: #096737;
 }
 ul.calculators a:hover {
     color: #096737;
