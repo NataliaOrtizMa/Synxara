@@ -276,7 +276,6 @@ footer i {
         background-color: #fcfaa4;
         margin: 0;
         border-radius: 0;
-        border-color: black;
     }
 
     ul {
@@ -287,7 +286,7 @@ footer i {
     }
 
     input:checked ~ nav {
-        display: inline;
+        display: block;
         position: absolute;
         margin-top: 16px;
         width: 100%;
@@ -308,6 +307,7 @@ footer i {
     input:checked ~ label[for="menu"]:after {
         /* content: '&#x2716'; */
         content: '✖';
+        position: absolute;
         top: 20px;
         right: 15px;
         width: 18px;
