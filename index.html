@@ -11,11 +11,22 @@
 <body>
     <header>
         <img class="logo" src="./images/Logo.jpg" alt="Logo">
-        <nav>
-            <a href="#quienes-somos">¿Quienes somos?</a>
-            <a href="#que-queremos">¿Qué queremos?</a>
-            <a href="#temas-interes">Temas de interés</a>
-        </nav>
+        <div class="checkbox-container">
+            <input type="checkbox" name="menu" id="menu">
+            <label for="menu"></label>
+            <nav>
+                <ul>
+                    <li><a href="#quienes-somos">¿Quiénes somos?</a></li>
+                    <li><a href="#que-queremos">¿Qué queremos?</a></li>
+                    <li><a href="#temas-interes">Temas de interés</a></li>
+                    <li><a href="#calculadoras-eco">Calculadoras Eco</a></li>
+                </ul>
+                
+                
+                
+            </nav>
+        </div>  
+        
     </header>
     <aside>
         <div class="card">
@@ -80,7 +91,7 @@
                     <li>Vida sostenible</li>
                 </ul>
             </section>
-            <section class="temas">
+            <section class="temas" id="calculadoras-eco">
                 <h2>Calculadoras ecológicas</h2>
                 <ul class="calculators">
                     <li><a href="https://www.watercalculator.org/wfc2/esp/" target="_blank">Huella hídrica</a></li>

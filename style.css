@@ -41,6 +41,10 @@ nav a:hover {
     color: #f95b3d;
 }
 
+input[type=checkbox] {
+    visibility: hidden;
+}
+
 h1 {
     font-family: 'Lobster Two', cursive;
     font-size: 72px;
@@ -58,7 +62,7 @@ aside {
     background-color: #fcfaa4de;
     position: sticky;
     top: 0px;
-    bottom: 50px;
+    /* bottom: 60px; */
     float: left;
     width: 250px;
 }
@@ -257,5 +261,60 @@ footer i {
 
     .temas {
         margin: 0;
+    }
+
+    nav {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+        flex-flow: column;
+    }
+
+    nav ul li {
+        background-color: #fcfaa4;
+        margin: 0;
+        border-radius: 0;
+        border-color: black;
+    }
+
+    ul {
+        list-style-type: none;
+        display: flex;
+        flex-flow: row wrap;
+        padding-left: 0px;
+    }
+
+    input:checked ~ nav {
+        display: inline;
+        position: absolute;
+        margin-top: 16px;
+        width: 100%;
+        left: 0;
+    }
+    input:not(:checked)~ label[for="menu"]:after {
+        /* content: '&#9776'; */
+        content: '☰';
+        position: absolute;
+        top: 20px;
+        right: 15px;
+        width: 18px;
+        height: 12px;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-between;
+    }
+    input:checked ~ label[for="menu"]:after {
+        /* content: '&#x2716'; */
+        content: '✖';
+        top: 20px;
+        right: 15px;
+        width: 18px;
+        height: 12px;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
     }
 }
